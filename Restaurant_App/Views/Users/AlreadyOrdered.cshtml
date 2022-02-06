@@ -1,0 +1,18 @@
+﻿@model Restaurant_App.Models.User
+@{
+    ViewBag.Title = "AlreadyOrdered";
+}
+
+<h2>Already Ordered , You Cant Make Another Order</h2>
+
+
+
+@if ((bool?)ViewBag.flag == true)
+{
+    <p> @Html.ActionLink("Back to List", "Index")</p>
+}
+else
+{
+    <p> @Html.ActionLink("Back to List", "IndexCustomer")</p>
+}
+

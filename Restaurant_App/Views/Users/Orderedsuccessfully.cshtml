@@ -1,0 +1,16 @@
+﻿@model Restaurant_App.Models.User
+@{
+    ViewBag.Title = "Orderedsuccessfully";
+}
+
+<h2>Ordered successfully</h2>
+
+
+@if ((bool?)ViewBag.flag == true)
+{
+    <p> @Html.ActionLink("Back to List", "Index")</p>
+}
+else
+{
+    <p> @Html.ActionLink("Back to List", "IndexCustomer")</p>
+}

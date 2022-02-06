@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Restaurant_AppModel1StoreContainer" CdmEntityContainer="Entity4">
+    <EntitySetMapping Name="FoodOfDays">
+      <EntityTypeMapping TypeName="Restaurant_AppModel1.FoodOfDay">
+        <MappingFragment StoreEntitySet="FoodOfDay">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DayId" ColumnName="DayId" />
+          <ScalarProperty Name="DayFood" ColumnName="DayFood" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
